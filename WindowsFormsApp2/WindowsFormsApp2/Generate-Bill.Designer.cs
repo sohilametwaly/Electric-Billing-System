@@ -33,6 +33,7 @@
             this.consumer_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Back_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bill_generation_btn
@@ -64,7 +65,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(173, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.Size = new System.Drawing.Size(109, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Service Number";
             // 
@@ -73,15 +74,26 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(169, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 16);
+            this.label2.Size = new System.Drawing.Size(113, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Consumer Name";
+            // 
+            // Back_btn
+            // 
+            this.Back_btn.Location = new System.Drawing.Point(12, 12);
+            this.Back_btn.Name = "Back_btn";
+            this.Back_btn.Size = new System.Drawing.Size(75, 23);
+            this.Back_btn.TabIndex = 5;
+            this.Back_btn.Text = "Back";
+            this.Back_btn.UseVisualStyleBackColor = true;
+            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.consumer_name);
@@ -102,6 +114,7 @@
         private System.Windows.Forms.TextBox consumer_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Back_btn;
     }
 }
 

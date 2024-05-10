@@ -32,6 +32,7 @@
             this.search_btn = new System.Windows.Forms.Button();
             this.bill_btn = new System.Windows.Forms.Button();
             this.reciept_btn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -39,7 +40,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(294, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 16);
+            this.label1.Size = new System.Drawing.Size(84, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin Page";
             // 
@@ -73,11 +74,22 @@
             this.reciept_btn.UseVisualStyleBackColor = true;
             this.reciept_btn.Click += new System.EventHandler(this.reciept_btn_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(267, 305);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 30);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Users Report";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.reciept_btn);
             this.Controls.Add(this.bill_btn);
             this.Controls.Add(this.search_btn);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.Button search_btn;
         private System.Windows.Forms.Button bill_btn;
         private System.Windows.Forms.Button reciept_btn;
+        private System.Windows.Forms.Button button1;
     }
 }

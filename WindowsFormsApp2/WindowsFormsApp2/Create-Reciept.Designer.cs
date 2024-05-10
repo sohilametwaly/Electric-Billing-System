@@ -35,6 +35,7 @@
             this.create_btn = new System.Windows.Forms.Button();
             this.price = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.Back_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -42,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(139, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.Size = new System.Drawing.Size(109, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Service Number";
             // 
@@ -58,7 +59,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(138, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 16);
+            this.label2.Size = new System.Drawing.Size(111, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Consumer name";
             // 
@@ -91,15 +92,26 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(168, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.Size = new System.Drawing.Size(80, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Meter Price";
+            // 
+            // Back_btn
+            // 
+            this.Back_btn.Location = new System.Drawing.Point(12, 12);
+            this.Back_btn.Name = "Back_btn";
+            this.Back_btn.Size = new System.Drawing.Size(75, 23);
+            this.Back_btn.TabIndex = 8;
+            this.Back_btn.Text = "Back";
+            this.Back_btn.UseVisualStyleBackColor = true;
+            this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Back_btn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.price);
             this.Controls.Add(this.create_btn);
@@ -124,5 +136,6 @@
         private System.Windows.Forms.Button create_btn;
         private System.Windows.Forms.TextBox price;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Back_btn;
     }
 }

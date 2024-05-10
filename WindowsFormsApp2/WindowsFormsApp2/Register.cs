@@ -63,5 +63,19 @@ namespace WindowsFormsApp2
             }
 
         }
+
+        private void Back_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LandingForm landing = new LandingForm();
+            landing.Show();
+        }
+
+        private void goToLogin_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

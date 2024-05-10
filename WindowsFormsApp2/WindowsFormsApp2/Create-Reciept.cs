@@ -75,6 +75,11 @@ namespace WindowsFormsApp2
 
         }
 
-
+        private void Back_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 AdminPage = new Form2();
+            AdminPage.Show();
+        }
     }
 }

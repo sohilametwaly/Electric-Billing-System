@@ -66,7 +66,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(136, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 16);
+            this.label1.Size = new System.Drawing.Size(21, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "ID";
             // 
@@ -75,7 +75,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(136, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             // 
@@ -84,13 +84,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(187, 342);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 16);
+            this.label3.Size = new System.Drawing.Size(177, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Doesn\'t have an account ?";
             // 
             // register_btn
             // 
-            this.register_btn.Location = new System.Drawing.Point(402, 328);
+            this.register_btn.Location = new System.Drawing.Point(398, 335);
             this.register_btn.Name = "register_btn";
             this.register_btn.Size = new System.Drawing.Size(125, 30);
             this.register_btn.TabIndex = 7;
