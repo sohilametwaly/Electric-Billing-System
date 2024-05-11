@@ -57,7 +57,6 @@ namespace WindowsFormsApp2
                 cmd2.Parameters.Add("service_no", service_no);
                 cmd2.Parameters.Add("user_name", user_name);
                 cmd2.Parameters.Add("totalprice", totalPrice);
-                cmd2.Parameters.Add("price", price);
                 cmd2.ExecuteNonQuery();
 
                 MessageBox.Show("Bill Generated Succesfully");

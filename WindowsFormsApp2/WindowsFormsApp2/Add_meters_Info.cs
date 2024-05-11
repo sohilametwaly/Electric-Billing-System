@@ -63,8 +63,8 @@ namespace WindowsFormsApp2
         private void Back_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 AdminPage = new Form2();
-            AdminPage.Show();
+            User_Page user_Page = new User_Page(service_number);
+            user_Page.Show();
 
         }
     }

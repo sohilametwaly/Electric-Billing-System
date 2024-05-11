@@ -34,33 +34,45 @@ namespace WindowsFormsApp2
             string service_no = service_number_box.Text;
             string phone_number = phone_box.Text;
             string address = address_box.Text;
-            string password = password_box.Text.ToString();    
+            string password = password_box.Text.ToString();
 
 
             OracleCommand cmd = new OracleCommand();
+            OracleCommand cmd2 = new OracleCommand();
             cmd.Connection = conn;
+            cmd2.Connection = conn;
+            cmd2.CommandText = " INSERT INTO METER_INFO (service_number) Values(:service_no)";
             cmd.CommandText = "INSERT INTO users(name, userid, service_number,phone_number,address,password) VALUES (:name, :id,  :service_no, :phone_number, :address, :password)";
+
+            cmd2.CommandType = CommandType.Text;
             cmd.CommandType = CommandType.Text;
+
+            cmd2.Parameters.Add("service_no", service_no);
             cmd.Parameters.Add("name", name);
             cmd.Parameters.Add("id", id);
             cmd.Parameters.Add("service_no", service_no);
             cmd.Parameters.Add("phone_number", phone_number);
             cmd.Parameters.Add("address", address);
             cmd.Parameters.Add("password", password);
+            int r2 = cmd2.ExecuteNonQuery();
             int r = cmd.ExecuteNonQuery();
-            if (r != -1)
+
+            if (r != 0)
             {
                 Login login = new Login();
                 login.Show();
                 this.Hide();
                 MessageBox.Show("New user is Added");
 
-               
+
             }
             else
             {
+
                 MessageBox.Show("User ID or Service number already existed choose anothe one");
+
             }
+
 
         }
 
