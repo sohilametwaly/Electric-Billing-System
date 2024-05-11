@@ -7,32 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CrystalDecisions.Shared;
 namespace WindowsFormsApp2
 {
-    public partial class Form4 : Form
+    public partial class UserBill : Form
     {
-        CrystalReport1 cr;
-        public Form4()
+        CrystalReport3 cr;
+        public UserBill()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            cr.SetParameterValue(0, Convert.ToInt32(textBox1.Text));
             crystalReportViewer1.ReportSource = cr;
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void UserBill_Load(object sender, EventArgs e)
         {
-            cr = new CrystalReport1();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form2 Admin_page = new Form2();
-            Admin_page.Show();
+            cr = new CrystalReport3();
         }
 
         private void crystalReportViewer1_Load(object sender, EventArgs e)

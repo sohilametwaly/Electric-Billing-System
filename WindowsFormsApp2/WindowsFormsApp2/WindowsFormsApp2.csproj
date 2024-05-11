@@ -71,6 +71,12 @@
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form4.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     <Compile Include="SearchForCustmers.Designer.cs">
       <DependentUpon>SearchForCustmers.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserBill.Designer.cs">
+      <DependentUpon>UserBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,10 @@
     <EmbeddedResource Include="CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
@@ -181,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SearchForCustmers.resx">
       <DependentUpon>SearchForCustmers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserBill.resx">
+      <DependentUpon>UserBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Page.resx">
       <DependentUpon>User_Page.cs</DependentUpon>

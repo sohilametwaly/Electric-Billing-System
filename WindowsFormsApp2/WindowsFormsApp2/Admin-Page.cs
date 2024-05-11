@@ -51,5 +51,12 @@ namespace WindowsFormsApp2
             Form4 form4 = new Form4();
             form4.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserBill userBill = new UserBill();
+            userBill.Show();
+        }
     }
 }

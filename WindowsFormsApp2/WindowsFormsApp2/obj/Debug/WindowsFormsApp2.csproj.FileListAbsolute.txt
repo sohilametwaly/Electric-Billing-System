@@ -57,3 +57,4 @@ F:\3rd Year\Second Term\Software Engineering\Electric-Billing-System\WindowsForm
 F:\3rd Year\Second Term\Software Engineering\Electric-Billing-System\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 F:\3rd Year\Second Term\Software Engineering\Electric-Billing-System\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 F:\3rd Year\Second Term\Software Engineering\Electric-Billing-System\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+F:\3rd Year\Second Term\Software Engineering\Electric-Billing-System\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UserBill.resources
