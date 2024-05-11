@@ -12,7 +12,7 @@ namespace WindowsFormsApp2
 {
     public partial class PayBill : Form
     {
-        public PayBill()
+        public PayBill(int service_number)
         {
             InitializeComponent();
         }

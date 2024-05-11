@@ -47,7 +47,7 @@ namespace WindowsFormsApp2
                 }
                 else
                 {
-                    User_Page user_Page = new User_Page();
+                    User_Page user_Page = new User_Page(id);
                     user_Page.Show();   
                 }
                 this.Hide();

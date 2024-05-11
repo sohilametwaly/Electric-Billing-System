@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.AddMeterInfoButton = new System.Windows.Forms.Button();
             this.metersNumberTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -64,12 +66,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 236);
+            this.label1.Location = new System.Drawing.Point(188, 236);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 17);
+            this.label1.Size = new System.Drawing.Size(108, 17);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Meters";
+            this.label1.Text = "Meters Reading";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Add_meters_Info
             // 
@@ -94,5 +102,6 @@
         private System.Windows.Forms.Button AddMeterInfoButton;
         private System.Windows.Forms.TextBox metersNumberTextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

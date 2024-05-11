@@ -17,11 +17,15 @@ namespace WindowsFormsApp2
     public partial class Add_meters_Info : Form
     {
         OracleConnection conn;
-        string ordb = "data source= orcl;user id =scott; password= tiger";
+        string ordb = "data source= orcl ; user id = scott ; password = tiger";
+        int service_number;
 
-        public Add_meters_Info()
+        public Add_meters_Info(int number)
         {
+            Console.WriteLine(number);
+            service_number = number;
             InitializeComponent();
+
         }
 
         private void Add_meters_Info_Load(object sender, EventArgs e)
@@ -37,23 +41,22 @@ namespace WindowsFormsApp2
 
         private void AddMeterInfoButton_Click(object sender, EventArgs e)
         {
-            int metersNumber = Convert.ToInt32(metersNumberTextBox.Text);
-
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "add_meter_info";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("meters_number", metersNumber);
+            cmd.CommandText = "UPDATE meter_info SET METERS_READING = :reading WHERE SERVICE_NUMBER = :serv";
+            cmd.Parameters.Add(":reading", Convert.ToInt32(metersNumberTextBox.Text));
+            cmd.Parameters.Add(":serv", Convert.ToInt32(service_number));
+            int r = cmd.ExecuteNonQuery();
 
-            try
+            if (r == -1)
             {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Meter info has been added successfully");
+                MessageBox.Show("Error");
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Meters added successfully");
             }
+
 
         }
 
